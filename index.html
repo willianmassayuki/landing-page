@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <img class="cabecalho__banner" alt="Banner" src="assets\img\desktop\image-hero.jpg">
+  <header class="cabecalho">
+        <img class="cabecalho__logo" alt="Loopstudios Logotipo" src="assets\img\logo.svg">
+        <h1 class="titulo-principal">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
+        <nav class="navegacao nav-superior">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+  </header>
 
-  Immersive experiences that deliver
+  <main>
+    <section class="principal">
+      <img class="principal__imagem" src="assets\img\desktop\image-interactive.jpg" alt="Interactive VR">
+      <div class="principal__caixa">
+        <h2 class="titulo-principal">THE LEADER IN INTERACTIVE VR</h2>
+        <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
+    </section>
+    <section class="criacoes">
+      <h3 class="titulo-principal">OUR CREATIONS</h3>
+      <button class="criacoes__botao titulo-principal">SEE ALL</button>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-deep-earth.jpg" alt="DEEP EARTH" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">DEEP<br>EARTH</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-night-arcade.jpg" alt="NIGHT ARCADE" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">NIGHT<br>ARCADE</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-soccer-team.jpg" alt="SOCCER TEAM VR" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">SOCCER<br>TEAM VR</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-grid.jpg" alt="THE GRID" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">THE<br>GRID</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-from-above.jpg" alt="FROM UP ABOVE VR" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">FROM UP<br>ABOVE VR</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-pocket-borealis.jpg" alt="POCKET BOREALIS" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">POCKET<br>BOREALIS</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-curiosity.jpg" alt="THE CURIOSITY" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">THE<br>CURIOSITY</h4>
+      </article>
+      <article class="criacoes__cartao">
+          <img src="assets\img\desktop\image-fisheye.jpg" alt="MAKE IT FISHEYE" class="criacoes__cartao--imagem">
+              <h4 class="criacoes__cartao--titulo titulo-principal">MAKE IT<br>FISHEYE</h4>
+      </article>
+    </section>
 
-  The leader in interactive VR
+  </main>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  <footer>
+    <img class="rodape__logo" alt="Loopstudios Logotipo" src="assets\img\logo.svg">
+    <nav class="navegacao nav-inferior">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
 
-  Our creations
+    <div class="redes-sociais">
+        <button class"botao__redes"><img alt="Facebook" src="assets\img\icon-facebook.svg"></button>
+        <button class"botao__redes"><img alt="Twitter" src="assets\img\icon-pinterest.svg"></button>
+        <button class"botao__redes"><img alt="Pinterest" src="assets\img\icon-twitter.svg"></button>
+        <button class"botao__redes"><img alt="Instagram" src="assets\img\icon-instagram.svg"></button>
+    </div>
 
-  See all
+    <p class="direitos">© 2021 Loopstudios. All rights reserved.</p>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Willian Sato</a>.
+    </div>
+  </footer>
 </body>
 </html>
