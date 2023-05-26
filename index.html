@@ -10,22 +10,31 @@
 
 </head>
 <body>
-  <img class="cabecalho__banner" alt="Banner" src="assets\img\desktop\image-hero.jpg">
-  <header class="cabecalho">
+  <header>
+    <div class="cabecalho">
         <img class="cabecalho__logo" alt="Loopstudios Logotipo" src="assets\img\logo.svg">
-        <h1 class="titulo-principal">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
-        <nav class="navegacao nav-superior">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
+        <button class="cabecalho__menu--icone versao--mobile"><img alt="Menu" src="assets\img\icon-hamburger.svg"></button>
+        <button class="cabecalho__fechar--icone versao--mobile"><img alt="Fechar" src="assets\img\icon-close.svg"></button>
+
+        <nav class="cabecalho__menu">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
         </nav>
+      </div>
   </header>
 
+  <img class="banner--desktop versao--desktop" alt="Banner" src="assets\img\desktop\image-hero.jpg">
+  <img class="banner--mobile versao--mobile" alt="Banner" src="assets\img\mobile\image-hero.jpg">
+
   <main>
+    <div class="caixa">
+      <div class="caixa-texto">
+        <h1 class="titulo-principal">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
+      </div>
+    </div>
     <section class="principal">
       <img class="principal__imagem" src="assets\img\desktop\image-interactive.jpg" alt="Interactive VR">
       <div class="principal__caixa">
@@ -79,14 +88,12 @@
 
   <footer>
     <img class="rodape__logo" alt="Loopstudios Logotipo" src="assets\img\logo.svg">
-    <nav class="navegacao nav-inferior">
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
+    <nav class="menu-inferior">
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Events</a>
+      <a href="#">Products</a>
+      <a href="#">Support</a>
     </nav>
 
     <div class="redes-sociais">
@@ -103,5 +110,6 @@
       Coded by <a href="#">Willian Sato</a>.
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
