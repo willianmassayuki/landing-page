@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 .attribution {
   font-size: 11px; text-align: center;
+  padding: 10px;
+  color: gray;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 87%);
+  text-decoration: none;
  }
 
 .titulo-principal {
@@ -11,7 +14,6 @@
 }
 
 body {
-    background-color: lightgray;
     font-family: 'Alata', sans-serif;
     Font size: 15px
 }
@@ -23,7 +25,9 @@ body {
 nav a{
     color: white;
     text-decoration: none;
+    
 }
+
 
 .cabecalho {
   position: absolute;
@@ -113,6 +117,42 @@ main{
   margin: 0 100px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 60px;
+}
+
+.menu-inferior{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.menu-inferior a {
+  padding: 10px;
+}
+
+.redes-sociais {
+  padding: 20px;
+}
+
+.botao__redes {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.direitos {
+  color: gray;
+}
 
 /* Estilo para a versão Desktop*/
 
@@ -155,16 +195,42 @@ main{
   .cabecalho__menu a {
     display: inline;
     float: right;
+    padding: 10px 0;
   }
 
   nav a{
+    position: relative;
     vertical-align: -webkit-baseline-middle;
     margin-left: 30px;
   }
 
+
+  nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  nav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
   .banner--desktop{
     display: block;
     width: 100%;
+    min-height: 100vh;
     padding-bottom: 50px;
   }
 
@@ -180,5 +246,43 @@ main{
     max-width: none;
   }
 
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    padding: 50px 100px 50px 100px;
+  }
+  
+  .menu-inferior{
+    display: inline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-area: 2/1;
+  }
+  
+  .menu-inferior a {
+    padding: 10px 0;
+    padding-bottom: 10px;
+    margin: 0 30px 0 0;
+  }
+  
+  .redes-sociais {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .botao__redes {
+    padding-left: 10px;
+  }
+
+  .direitos {
+    display: flex;
+    justify-content: end;
+  }
+
+  .attribution {
+    display: none;
+  }
 
 }
