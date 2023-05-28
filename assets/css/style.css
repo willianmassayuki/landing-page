@@ -9,6 +9,19 @@
   text-decoration: none;
  }
 
+ h2 {
+  font-size: 30px;
+  padding: 20px;
+ }
+
+ h4 {
+  font-size: 20px;
+ }
+
+ p {
+  line-height: 2rem;
+ }
+
 .titulo-principal {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -114,7 +127,44 @@ nav a{
 }
 
 main{
-  margin: 0 100px;
+ 
+}
+
+.pai-principal{
+
+}
+
+.principal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 40px;
+}
+
+.principal__imagem img {
+  width: 100%;
+}
+
+.principal__caixa {
+  padding: 20px;
+  text-align: center;
+}
+
+.criacoes {
+  text-align: center;
+  padding: 40px;
+  display: grid;
+  grid-row: span;
+}
+
+.criacoes img {
+  width: 100%;
+  position: relative;
+}
+
+.criacoes {
+  
 }
 
 footer {
@@ -159,6 +209,14 @@ footer {
 @media screen and (min-width: 1200px) {
   body{
     background-color: darkgray;
+  }
+
+  main {
+    margin: 0 100px;
+  }
+
+  .versao--desktop{
+    display: block;
   }
 
   .versao--mobile{
